@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spinning Wheel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+	<img class="img-epic" src="img/epicwe.png" alt="myarrow">
+	<img class="img-arrow" src="img/play.png" alt="myarrow">
+	<div class="spinBtn">Spin</div>
+    <div class="wheel">
+	<span style="--i:0;"></span>
+	<span style="--i:1;"></span>
+	<span style="--i:2;"></span>
+	<span style="--i:3;"></span>
+	<div class="number">
+	<b style="--i:0;">Redefining Values/Generations</b>
+	<b style="--i:1;">Remixing Heritage/History</b>
+	<b style="--i:2;">Reimagining Utopian/Dystopian Futures</b>
+	<b style="--i:3;">Rewriting History/Reality</b>
+	</div>
+	</div>
+	<div class="wheel inner">
+	<span style="--i:0;"></span>
+	<span style="--i:1;"></span>
+	<span style="--i:2;"></span>
+	<span style="--i:3;"></span>
+	<div class="cultural">
+	<b style="--i:0;">Cultural Aesthetics</b>
+	<b style="--i:1;">Cultural Gameplay</b>
+	<b style="--i:2;">Cultural Gameworlds</b>
+	<b style="--i:3;">Cultural Stories</b>
+	</div>
+	</div>
+	<div class="wheel innerin">
+	<span style="--i:0;"></span>
+	<span style="--i:1;"></span>
+	<span style="--i:2;"></span>
+	<span style="--i:3;"></span>
+	<div class="senses">
+	<b style="--i:0;">Simulations/Senses</b>
+	<b style="--i:1;">Anti-Shooter/Action</b>
+	<b style="--i:2;">Rhythm/Art</b>
+	<b style="--i:3;">Puzzle/Adventure</b>
+	</div>
+	</div>
+	<div class="wheel innerinin">
+	<span style="--i:0;"></span>
+	<span style="--i:1;"></span>
+	<span style="--i:2;"></span>
+	<span style="--i:3;"></span>
+	<div class="freedom">
+	<b style="--i:0;">Freedom</b>
+	<b style="--i:1;">Law of Rules</b>
+	<b style="--i:2;">Equality</b>
+	<b style="--i:3;">Human rights</b>
+	<b style="--i:4;">Democracy</b>
+	<b style="--i:5;">Human Dignity</b>
+	</div>
+	</div>
+  </div>
+  <script>
+  let wheel = document.querySelector('.wheel');
+  let inner = document.querySelector('.inner');
+  let innerin = document.querySelector('.innerin');
+  let innerinin = document.querySelector('.innerinin');
+  let spinBtn = document.querySelector('.spinBtn');
+  
+  let value1 = Math.ceil(Math.random() * 3600);
+  let value2 = Math.ceil(Math.random() * 3600);
+  let value3 = Math.ceil(Math.random() * 3600);
+  let value4 = Math.ceil(Math.random() * 3600);
+  
+  spinBtn.onclick = function(){
+  wheel.style.transform = "rotate(" + value1 + "deg)"
+  inner.style.transform = "rotate(" + value2 + "deg)"
+  innerin.style.transform = "rotate(" + value3 + "deg)"
+  innerinin.style.transform = "rotate(" + value4 + "deg)"
+  value1 += Math.ceil(Math.random() * -3600);
+  value2 += Math.ceil(Math.random() * -3600);
+  value3 += Math.ceil(Math.random() * -3600);
+  value4 += Math.ceil(Math.random() * -3600);
+  }
+  </script>
+</body>
+</html>
