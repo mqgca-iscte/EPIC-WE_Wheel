@@ -211,7 +211,7 @@ body {
 	.img-arrow {
 		width: 30px; /* Smaller arrow */
 		right: 36%; /* Adjust position */
-		top: 47.5%; /* Adjust position */
+		top: 47%; /* Adjust position */
 	}
 
 	.img-epic {
@@ -236,7 +236,7 @@ body {
 	.cultural b,
 	.senses b,
 	.freedom b {
-		font-size: 60%; /* Smaller text */
+		font-size: 50%; /* Smaller text */
 		inset: 5%; /* Adjust inner spacing using percentage */
 	}
 
