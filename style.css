@@ -236,7 +236,7 @@ body {
 	.cultural b,
 	.senses b,
 	.freedom b {
-		font-size: 15%; /* Smaller text */
+		font-size: 40%; /* Smaller text */
 		inset: 5%; /* Adjust inner spacing using percentage */
 	}
 
