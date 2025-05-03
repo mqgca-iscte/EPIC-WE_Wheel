@@ -65,7 +65,7 @@ body {
 .spinBtn{
 	position: absolute;
 	inset: 350px;
-	background: #ffcb34;
+	background: #252525;
 	color: #f5f5f5;
 	border-radius: 50%;
 	display: flex;
@@ -73,7 +73,7 @@ body {
 	align-items: center;
 	z-index: 10000;
 	cursor: pointer;
-	filter: drop-shadow(0 0 5px #ffcb34);
+	filter: drop-shadow(0 0 5px #252525);
 	user-select: none;
 	text-transform: uppercase;
 	font-size: 1.5em;
@@ -123,7 +123,7 @@ body {
 	box-shadow: 0 0 15px #29c2ff;
 	background: #29c2ff;
 	border: 3px solid #29c2ff;
-	transition: transform 6s ease-in-out;
+	transition: transform 4s ease-in-out;
 	z-index: 3;
 }
 
@@ -155,7 +155,7 @@ body {
 	box-shadow: 0 0 15px #ff71df;
 	background: #ff71df;
 	border: 3px solid #ff71df;
-	transition: transform 7s ease-in-out;
+	transition: transform 5s ease-in-out;
 	z-index: 3;
 }
 
@@ -171,7 +171,7 @@ body {
 	box-shadow: 0 0 15px #d071ff;
 	background: #d071ff;
 	border: 3px solid #d071ff;
-	transition: transform 8s ease-in-out;
+	transition: transform 6s ease-in-out;
 	z-index: 4;
 }
 
@@ -210,22 +210,22 @@ body {
 
 	.img-arrow {
 		width: 30px; /* Smaller arrow */
-		right: 15%; /* Adjust position */
-		top: 2%; /* Adjust position */
+		right: 36%; /* Adjust position */
+		top: 47.5%; /* Adjust position */
 	}
 
 	.img-epic {
-		width: 150px; /* Smaller image */
-		right: auto; /* Reset right position */
+		width: 200px; /* Smaller image */
+		right: -10%; /* Reset right position */
 		left: 50%; /* Center the image */
 		transform: translateX(-50%); /* Adjust centering */
-		top: -8%; /* Adjust position */
+		top: -30%; /* Adjust position */
 	}
 
 	.spinBtn {
 		inset: auto; /* Reset inset */
-		width: 120px; /* Fixed width for the button */
-		height: 120px; /* Fixed height for the button */
+		width: 20%; /* Fixed width for the button */
+		height: 20%; /* Fixed height for the button */
 		top: 50%; /* Center vertically */
 		left: 50%; /* Center horizontally */
 		transform: translate(-50%, -50%); /* Adjust centering */
@@ -236,8 +236,8 @@ body {
 	.cultural b,
 	.senses b,
 	.freedom b {
-		font-size: 12px; /* Smaller text */
-		inset: 10%; /* Adjust inner spacing using percentage */
+		font-size: 60%; /* Smaller text */
+		inset: 5%; /* Adjust inner spacing using percentage */
 	}
 
 	.inner {
